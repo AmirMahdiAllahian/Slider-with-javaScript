@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    width: 90vw;
+
+    
+}
+.panel{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color:white ;
+    position: relative;
+    transition: all 700ms;
+    flex: 0.5;
+    margin: 10px;
+}
+.panel h3{
+    font-size: 24px;
+    color:white;
+    opacity: 0;
+    position: absolute;
+    left: 20px;
+    bottom: 20px; 
+    transition: all 2s; 
+    word-wrap: normal; 
+}
+.panel.active{
+    flex: 5;
+}
+.panel.active h3{
+    opacity: 1;
+}
+#slider-1{
+    background-image: url(img/city-on-winter\ -\ Copy.jpg);
+}
+#slider-2{
+    background-image: url(img/wild-forest\ -\ Copy.jpg);
+}
+#slider-3{
+    background-image: url(img/sunny-beach\ -\ Copy.jpg);
+}
+#slider-4{
+    background-image: url(img/mountains\ -\ Copy.jpg);
+}
+#slider-5{
+    background-image: url(img/explore-the-world\ -\ Copy.jpg);
+}
